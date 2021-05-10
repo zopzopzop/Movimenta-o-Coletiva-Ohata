@@ -37,6 +37,7 @@ public class FlockinManager : MonoBehaviour
     }
     void Update()
     {
+        goalPos = this.transform.position;
         if (Random.Range(0, 100) < 10)
             goalPos = this.transform.position + new Vector3(Random.Range(-swinLimits.x, swinLimits.x), Random.Range(-swinLimits.y, swinLimits.y), Random.Range(-swinLimits.z, swinLimits.z));
     }
